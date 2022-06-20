@@ -10,7 +10,8 @@
 <script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-login="integralspbot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
 <script type="text/javascript">
   function onTelegramAuth(user) {
-    window.location.replace("http://api.pank.su:25565/check_data?auth_date=" + user.auth_date + "&first_name=" + user.first_name + "&id=" + user.id + "&username=" + user.username);
+    window.location.replace("http://api.pank.su:25565/check_data?auth_date=" + user.auth_date + "&first_name="
+     + user.first_name + "&id=" + user.id + "&username=" + user.username + "&hash=" + user.hash);
   }
 </script>
 </body>
