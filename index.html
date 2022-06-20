@@ -13,7 +13,7 @@
     console.log(user)
     let urlParams = new URLSearchParams(window.location.search);
     let session = urlParams.get('session')
-    let new_url = "http://api.pank.su:25565/check_data?auth_date=" + user.auth_date + "&first_name=" + user.first_name + "&hash=" + user.hash + "&session=" + session + "&id=" + user.id
+    let new_url = "http://api.pank.su:25565/check_data?auth_date=" + user.auth_date + "&first_name=" + user.first_name + "&hash=" + user.hash + "&session_id=" + session + "&id=" + user.id
     if (user.last_name != undefined)
       new_url += "&last_name=" + user.last_name
     if (user.photo_url != undefined)
