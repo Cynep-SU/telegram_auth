@@ -11,7 +11,7 @@
 <script type="text/javascript">
   function onTelegramAuth(user) {
     console.log(user)
-    let urlParams = new URLSearchParams(queryString);
+    let urlParams = new URLSearchParams(window.location.search);
     let session = urlParams.get('session')
     let new_url = "http://api.pank.su:25565/check_data?auth_date=" + user.auth_date + "&first_name=" + user.first_name + "&hash=" + user.hash + "&session=" + session + "&id=" + user.id
     if (user.last_name != undefined)
